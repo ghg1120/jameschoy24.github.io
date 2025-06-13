@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head as index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Choy | Core Competencies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <!-- Same navigation as index.html -->
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typed-text">James Choy</h1>
+                <p class="subtitle">Graphic Communications & Marketing Specialist</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="portfolio-header">
-            <h1>My Portfolio</h1>
-            <p>Selected projects showcasing my marketing and event coordination skills</p>
-        </section>
-
-        <section class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="images/apo-event.jpg" alt="Alpha Phi Omega Event">
-                <div class="portfolio-overlay">
-                    <h3>Service Event Coordination</h3>
-                    <p>Led logistics for 10+ service projects with 100+ attendees</p>
-                    <a href="#" class="btn">View Case Study</a>
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="section">
+        <div class="container">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="competency-grid">
+                <!-- Competency 1 -->
+                <div class="competency-card">
+                    <div class="competency-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Excel reporting</li>
+                        <li>Trend identification</li>
+                        <li>KPI tracking</li>
+                    </ul>
                 </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <img src="images/social-media.jpg" alt="Social Media Campaign">
-                <div class="portfolio-overlay">
-                    <h3>Social Media Growth</h3>
-                    <p>Increased engagement by 30% through targeted campaigns</p>
-                    <a href="#" class="btn">View Campaign</a>
+                
+                <!-- Competency 2 -->
+                <div class="competency-card">
+                    <div class="competency-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Event Coordination</h3>
+                    <ul>
+                        <li>Logistics management</li>
+                        <li>Vendor relations</li>
+                        <li>Timeline execution</li>
+                    </ul>
                 </div>
+                
+                <!-- Add 4-6 more competency cards -->
             </div>
-            
-            <!-- Add more portfolio items as needed -->
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <!-- Same footer as index.html -->
-    </footer>
+    <!-- Project Showcase -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Project Highlights</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="project-grid">
+                <!-- Projects will load here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/typed.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
